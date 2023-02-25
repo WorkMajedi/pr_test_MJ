@@ -1,0 +1,15 @@
+# npm
+node_modules
+# next.js build files
+.env.*
+!.env.example
+# Sentry
+.sentryclirc
+/.idea/
+.next/
+/.next/cache/*
+cache/webpack/client-development
+/.next/
+/yarn-error.log
+/.next/cache/webpack/client-development/
+.next

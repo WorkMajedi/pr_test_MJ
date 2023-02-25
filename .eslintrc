@@ -1,0 +1,43 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "env": {
+        "node": true,
+        "browser": true,
+        "amd": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "google",
+        "prettier"
+    ],
+    "rules": {
+        "require-jsdoc": 0,
+        "lines-around-comment": [
+            "error",
+            {
+                "beforeBlockComment": true,
+                "afterBlockComment": false,
+                "beforeLineComment": false,
+                "afterLineComment": false,
+                "allowBlockStart": true,
+                "allowBlockEnd": true,
+                "allowObjectStart": true,
+                "allowObjectEnd": true,
+                "allowArrayStart": true,
+                "allowArrayEnd": true
+            }
+        ]
+    }
+}

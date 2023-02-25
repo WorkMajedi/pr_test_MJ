@@ -1,0 +1,67 @@
+{
+    "name": "test",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "build:analyze": "ANALYZE=true npm run build",
+        "lint": "eslint --fix \"**/*.{js,jsx,ts,tsx}\"",
+        "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx}\""
+    },
+    "dependencies": {
+        "@apollo/client": "^3.7.2",
+        "@emotion/react": "^11.10.5",
+        "@emotion/server": "^11.10.0",
+        "@emotion/styled": "^11.10.5",
+        "@mui/icons-material": "^5.11.0",
+        "@mui/material": "^5.11.0",
+        "@mui/styles": "^5.11.0",
+        "@next/bundle-analyzer": "^13.0.6",
+        "@next/font": "^13.0.6",
+        "@reduxjs/toolkit": "^1.9.1",
+        "@sentry/nextjs": "^7.26.0",
+        "axios": "^1.2.1",
+        "deepmerge": "^4.3.0",
+        "next": "^13.0.6",
+        "next-compose-plugins": "^2.2.1",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-lazy-load": "^4.0.1",
+        "react-redux": "^8.0.5"
+    },
+    "devDependencies": {
+        "@emotion/babel-plugin": "^11.10.6",
+        "@next/eslint-plugin-next": "^13.0.6",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/react-hooks": "^8.0.1",
+        "@types/jest": "^29.2.4",
+        "@types/node": "^18.11.15",
+        "@types/react": "^18.0.26",
+        "@types/react-dom": "^18.0.9",
+        "@types/react-redux": "^7.1.24",
+        "@types/stylis": "^4.0.2",
+        "@typescript-eslint/eslint-plugin": "^5.46.1",
+        "@typescript-eslint/parser": "^5.46.1",
+        "dotenv": "^16.0.3",
+        "eslint": "^8.29.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-next": "^0.0.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.31.11",
+        "husky": "^8.0.2",
+        "identity-obj-proxy": "^3.0.0",
+        "isomorphic-unfetch": "^3.1.0",
+        "prettier": "2.8.1",
+        "start-server-and-test": "^1.15.2",
+        "ts-jest": "^29.0.3",
+        "typescript": "^4.9.4"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "npm run lint -- --quiet --fix"
+        ]
+    }
+}
